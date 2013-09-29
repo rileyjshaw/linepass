@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.blah.linepass.BlahActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_blah"
+            android:parentActivityName="com.blah.linepass.DashActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.blah.linepass.DashActivity" />
+        </activity>
     </application>
 
 </manifest>

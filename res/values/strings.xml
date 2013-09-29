@@ -2,22 +2,27 @@
 <resources>
 
     <string name="action_profile">Profile</string>
-
+    <string name="action_triangle">A</string>
+    
     <string name="app_name">LinePass</string>
     <string name="action_settings">Settings</string>
+
     <string name="dash_title_nearby">Nearby</string>
     <string name="dash_title_favourites">Favourites</string>
     <string name="dash_title_deals">Deals</string>
 
     <string-array name="venues">
-        <item >The Brass</item>
-        <item >Ale House</item>
-        <item >Fluid</item>
-        <item >The Toucan</item>
-        <item >Queen\'s Pub</item>
-        <item >Alphies</item>
-        <item >Stages</item>
-        <item >The Grad Club</item>
+        <item>The Brass</item>
+        <item>Ale House</item>
+        <item>Fluid</item>
+        <item>The Toucan</item>
+        <item>Queen\'s Pub</item>
+        <item>Alphies</item>
+        <item>Stages</item>
+        <item>The Grad Club</item>
     </string-array>
-    
+
+    <string name="title_activity_blah">Blah Activity</string>
+    <string name="blah_content">BLAH BLAH</string>
+
 </resources>

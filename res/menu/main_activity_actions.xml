@@ -5,4 +5,8 @@
           android:title="@string/action_profile"
           android:showAsAction="ifRoom"/>
 
+    <item android:id="@+id/action_triangle"
+          android:title="@string/action_triangle"
+          android:showAsAction="ifRoom"/>
+
 </menu>

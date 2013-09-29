@@ -19,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class DashActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -76,13 +77,11 @@ public class DashActivity extends FragmentActivity implements ActionBar.TabListe
                             .setTabListener(this));
         }
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.dash, menu);
-//        return true;
-//    }
+    
+    public void do_triangle_stuf(View view) {
+    	Intent intent = new Intent(this, BlahActivity.class);
+    	startActivity(intent);
+    }
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -90,6 +89,19 @@ public class DashActivity extends FragmentActivity implements ActionBar.TabListe
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch (item.getItemId()) {
+    		case R.id.action_triangle:
+    			SocketIO socket = new SocketIO("http://127.0.0.1");
+    	    	Intent intent = new Intent(this, BlahActivity.class);
+    	    	startActivity(intent);
+    			return true;
+    		default:
+    			return super.onOptionsItemSelected(item);
+    	}
     }
     
     @Override
